@@ -13,7 +13,7 @@ const CategoryList = async() => {
                 {
                     allCategoeies.map(category =>
                         <Button variant="outlined" key={category.id}>
-                                 <Link href={category.title}>  {category.title}</Link>
+                                 <Link href={`/categories/news?category=${category.title.toLowerCase()}`}>  {category.title}</Link>
                         </Button>
                     )
                 }
